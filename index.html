@@ -9,6 +9,39 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+<style>
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 2000px;
+}
+</style>
+
   </head>
   <body>
     <section class="page-header">
@@ -28,22 +61,24 @@
 <h3>
 <a id="projects-page" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Research</h3>
 
-<li><b>Multi-agent Reinforcement Learning</b></li><br>
 
-<ul>- Project</ul>
+<button class="accordion">Multi-agent Reinforcement Learning</button>
+<div class="panel">
+<br>
+<ul>Project</ul>
 <pre>- Bio-insect interaction experiment (government project)</pre>
 
-<ul>- Publication</ul>
+<ul>Publication</ul>
 <pre>
 - Han-Eol Kim, Master Thesis, "Multiagent Cooperative Reinforcement Learning: Convergence Proofs and Applications", School of Information and Mechatronics, Gwangju Institute of Science and Technology, 2011.
 - Han-Eol Kim, Hyo-sung Ahn, “Convergence of Multiagent Q-Learning: Multi Action Replay Process Approach”, IEEE ISIC 2010, Yokohama, Japan
 - Han-Eol Kim, Hyo-sung Ahn, “Multi-agent cooperative reinforcement learning for heterogeneous mobile robots”, ICMIT 2009, Gwangju, Korea
 - Han-Eol Kim, Hyo-sung Ahn, “A review on Q-Learning convergence theorem”, KACC 2009, Busan, Korea</pre>
 
-<ul>- Tool and Library</ul>
+<ul>Tool and Library</ul>
 <pre>- Visual Studio 2005 C/C++, MFC, Pioneer Robot SDK, OpenCV, Ultrasonic Satellite, MATLAB</pre>
 
-<ul>- Images</ul>
+<ul>Images</ul>
 <table>
 <tr>
 <td><img src="img/reinforcement_learning/img1.png"><br><h4>Mobile Robot - HeWit</td>
@@ -52,11 +87,15 @@
 <td><img src="img/reinforcement_learning/img4.gif"><br><h4>RL Experiment</td>
 </tr>
 </table>
+</div>
 
-<br><br><br>
+<br>
 
-<li><b>Model-based Control System Simulator</b></li><br>
-<ul>- Project</ul>
+<button class="accordion">Model-based Control System Simulator</button>
+<div class="panel">
+<br>
+
+<ul>Project</ul>
 <pre>- CEMTool: Script based control system simulation software (MALTAB-like)
 - CEMStudio: GUI based control system simulation software (Simulink, LabVIEW-like)
 - ImageMaker: GUI based image processing design tool
@@ -65,29 +104,36 @@
 - seaHERO: Seawater desalination simulation software (government project)
 - Toolbox development (Numerical Analysis, Control Engineering, Image Processing)</pre>
 
-<ul>- Publication</ul>
+<ul>Publication</ul>
 <pre>- Han-Eol Kim, Bong-hee Seo, Kwang-jin Kim, “CEMStudio: model-based simulation software for general-purpose signal processing”, KMMS 2012, Seoul, Korea (*Best Award Paper)
 - Han-Eol Kim, Huy Bien, Kwang-Jin Kim, Jun-Ha Kim, “seaHERO: Modeling and Simulation Software for Seawater Desalination Plant”, 4th International Desalination Workshop 2011, Jeju, Korea
 - Young Wook Kwon, Han-Eol Kim, Wook-hyun Kwon, Soohee Han, "Golf swing simulation using a double inverted pendulum", IEIE 2011, Jeju, Korea</pre>
 
-<ul>- Tool and Library</ul>
+<ul>Tool and Library</ul>
 <pre>- Visual Studio 6/2008/2010 MFC, C/C++/C#, InstallShield, OpenCV, Kinect, LAPACK, MKL, OpenMP, MATLAB, LabVIEW, HTML5, Java Script, CSS, Apache, MySQL, PHP</pre>
 
-<ul>- Images</ul>
+<ul>Images</ul>
 <table>
 <tr>
-<td><img src="img/model_based_control_system/img1.png"><br><a href="https://www.youtube.com/watch?v=sSzPY4y7MOU" target=_blank>CEMTool</a></td>
-<td><img src="img/model_based_control_system/img2.png"><a href="https://www.youtube.com/watch?v=FmjjkBV7Zq4" target=_blank>CEMStudio</a></td>
-<td><img src="img/model_based_control_system/img5.png"><a href="https://www.youtube.com/watch?v=SwLmb-N9tCg" target=_blank>CQR</a></td>
-<td><img src="img/model_based_control_system/img4.png"><a href="https://www.youtube.com/watch?v=G_VguqmPK7w" target=_blank>MathFreeOn</a></td>
+<td><iframe width="360" height="270" src="https://www.youtube.com/embed/sSzPY4y7MOU" frameborder="0" allowfullscreen></iframe></td>
+<td><iframe width="360" height="270" src="https://www.youtube.com/embed/FmjjkBV7Zq4" frameborder="0" allowfullscreen></iframe></td>
 </tr>
 </table>
+<table>
+<tr>
+<td><iframe width="360" height="270" src="https://www.youtube.com/embed/SwLmb-N9tCg" frameborder="0" allowfullscreen></iframe></td>
+<td><iframe width="360" height="270" src="https://www.youtube.com/embed/2W0fC443dBg" frameborder="0" allowfullscreen></iframe></td>
+</tr>
+</table>
+</div>
 
-<br><br><br>
+<br>
 
-<li><b>Medical image processing</b></li><br>
+<button class="accordion">Medical image processing</button>
+<div class="panel">
+<br>
 
-<ul>- Project</ul>
+<ul>Project</ul>
 <pre>
 - Main software development of ultrasound diagnosis equipment
  1) 2D/3D image module, user interface, engine development, and debugging
@@ -119,12 +165,12 @@
 - Han-Eol Kim, "Ultrasound diagnosis apparatus and method of displaying ultrasound image", US Patent 20150257738A1, Europe Patent 2918233A1, China Patent 104905814A
 </pre>
 
-<ul>- Tool and Library</ul>
+<ul>Tool and Library</ul>
 <pre>- C++, C#, Delphi (Pascal), DirectX (HLSL), IPP, OpenCV, itk, vtk, ImageJ, dcmtk, caffe
 - HTML5, Java Script, CSS, PHP, MySQL, Apache
 - ARM Cortex M3 (TI CC2650), CCS, IAR</pre>
 
-<ul>- Images</ul>
+<ul>Images</ul>
 <table>
 <tr>
 <td><img src="img/medical_imaging/img1.gif"><br><h4>Specular reflection rendering</td>
@@ -138,18 +184,21 @@
 <td><img src="img/medical_imaging/img5.gif" style="width:300px"><br><h4>Polyp measurement</td>
 </tr>
 </table>
+</div>
 
-<br><br><br>
+<br>
 
-<li><b>Green-Emitting Alkaline Earth Aluminate Phosphor</b></li><br>
+<button class="accordion">Green-Emitting Alkaline Earth Aluminate Phosphor</button>
+<div class="panel">
+<br>
 
-<ul>- Project</ul>
+<ul>Project</ul>
 <pre>
 - Green-Emitting Alkaline Earth Aluminate Phosphor
 - Experimental environment setting, data analysis
 </pre>
 
-<ul>- Publication</ul>
+<ul>Publication</ul>
 <pre>
 - Doory Kim, Han-Eol Kim, Chang-Hong Kim, "Effect of Composition and Impurities on the Phosphorescence of Green-emitting Alkaline Earth Aluminate Phosphor", PLoS ONE, 2016
 - Han-Eol Kim, Doory Kim, Chang-Hong Kim, "Energy Transfer between Two Phosphorescent Phosphors", Korean Chemical Society 2007, Daegu, Korea
@@ -161,15 +210,16 @@
 - Doory Kim, Chang-hong Kim, Han-Eol Kim, "Fluorescent lamp with phosphorescent mold cover", KR Patent pending (10-2006-0071858)
 </pre>
 
-<ul>- Tool and Library</ul>
+<ul>Tool and Library</ul>
 <pre>- Visual Basic, PIC-C, Origin</pre>
 
-<ul>- Images</ul>
+<ul>Images</ul>
 <table>
 <tr>
 <td><img src="img/phosphor/img1.png" style="width:400px;"><br><h4>Green-emitting phosphor</td>
 </tr>
 </table>
+</div>
 
 <h3>
 <a id="support-or-contact" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact Info</h3>
@@ -186,5 +236,16 @@
     </section>
 --!>
   
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
   </body>
 </html>
